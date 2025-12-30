@@ -5,32 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        div>p:first-child {
+            background-color: yellow;
+            color: red;
+        }
+
+        p {
+            color: white;
+            background-color: blue;
+        }
+    </style>
 </head>
 
 <body>
-    given 12 files 6 audio and 6n video files
-    design a web html only which show these 12 files in a semantic way
-    <main>
-        <section>
-            <ul>
-                <li><a href="/sample_audio.aac">Audio file 1</a></li>
-                <li><a href="/sample_audio.aac">Audio file 2</a></li>
-                <li><a href="/sample_audio.aac">Audio file 3</a></li>
-                <li><a href="/sample_audio.aac">Audio file 4</a></li>
-                <li><a href="/sample_audio.aac">Audio file 5</a></li>
-                <li><a href="/sample_audio.aac">Audio file 6</a></li>
-            </ul>
-            <ul>
-                <li><a href="/sample_video.mp4">Video file 1</a></li>
-                <li><a href="/sample_video.mp4">Video file 2</a></li>
-                <li><a href="/sample_video.mp4">Video file 3</a></li>
-                <li><a href="/sample_video.mp4">Video file 4</a></li>
-                <li><a href="/sample_video.mp4">Video file 5</a></li>
-                <li><a href="/sample_video.mp4">Video file 6</a></li>
-            </ul>
-        </section>
-    </main><br>
-    <footer>Copyright | Vikram</footer>
+    <div>
+        <p class="para">This is para 1</p>
+        <p class="para">This is para 2</p>
+        <p class="para">This is para 3</p>
+        <p class="para">This is para 4</p>
+        <p class="para">This is para 5</p>
+    </div>
 
 </body>
 
