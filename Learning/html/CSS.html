@@ -172,6 +172,35 @@
 
         <!-- em example -->
         <div class="class">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt debitis rem optio?</div>
+
+        em vs rem example:
+        <div style="font-size: 20px; border: 2px solid black; margin: 20px; padding: 10px; width: 50%;">
+            This is a div with font-size 20px.
+            <p style="font-size: 2em; border: 2px solid red; margin: 15px; padding: 5px; width: 80%;">This is a
+                paragraph with font-size 2em (2 times the parent element's font size, which is 20px, so 40px).</p>
+            <p style="font-size: 2rem; border: 2px solid green; margin: 15px; padding: 5px; width: 80%;">This is a
+                paragraph with font-size 2rem (2 times the root element's font size, which is typically 16px, so
+                32px).</p>
+            <!-- rem is not affected by the font-size of the parent element.
+                rem is always relative to the root element's font-size.
+                rem is useful for maintaining consistent font sizes across a website, regardless of the nesting of elements.
+                rem is often used in responsive web design to ensure that font sizes scale appropriately with the overall layout.
+                rem can help improve accessibility by allowing users to adjust the root font size in their browser settings, which will proportionally adjust all rem-based font sizes on the page.
+                 
+                meanwhile, em can be useful for creating scalable components that adapt to their parent container's font size.
+                em can be beneficial for creating modular designs where components need to scale based on their immediate context.
+                em can be used for fine-tuning the spacing and sizing of elements within a specific section of a webpage.
+                 -->
+            <!-- percent(%) unit is relative to the parent element's size. -->
+            example:
+            <div style="width: 400px; height: 200px; border: 2px solid black; margin: 20px; padding: 10px;">
+                This is a div with width 400px and height 200px.
+                <div style="width: 50%; height: 50%; border: 2px solid red; margin: 15px; padding: 5px;">
+                    This is a nested div with width 50% and height 50% of its parent div (200px width and 100px height).
+                </div>
+            </div>
+        </div>
+
 </body>
 
 </html>
